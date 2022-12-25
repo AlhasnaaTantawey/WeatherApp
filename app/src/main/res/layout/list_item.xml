@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingBottom="20dp"
+    android:layout_height="wrap_content">
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/list_item_design_textView_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="temp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/list_item_design_textView_desc"
+        app:layout_constraintTop_toTopOf="@id/list_item_design_textView_temp"
+        app:layout_constraintStart_toEndOf="@id/list_item_design_textView_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:text="description"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/list_item_design_textView_hours"
+        app:layout_constraintTop_toTopOf="@id/list_item_design_textView_temp"
+        app:layout_constraintStart_toEndOf="@id/list_item_design_textView_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:text="hours"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
